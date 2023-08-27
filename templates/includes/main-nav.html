@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -17,10 +17,10 @@
                 Dairy
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Milk</a>
-                <a href="" class="dropdown-item">Yoghurt</a>
-                <a href="" class="dropdown-item">Cheese</a>
-                <a href="" class="dropdown-item">All Dairy</a>
+                <a href="{% url 'products' %}?category=milk" class="dropdown-item">Milk</a>
+                <a href="{% url 'products' %}?category=yoghurt" class="dropdown-item">Yoghurt</a>
+                <a href="{% url 'products' %}?category=cheese" class="dropdown-item">Cheese</a>
+                <a href="{% url 'products' %}?category=milk,yoghurt,cheese" class="dropdown-item">All Dairy</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Basics
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bread</a>
-                <a href="" class="dropdown-item">Eggs</a>
-                <a href="" class="dropdown-item">Butter &amp; Spreads</a>
-                <a href="" class="dropdown-item">All Basics</a>
+                <a href="{% url 'products' %}?category=bread" class="dropdown-item">Bread</a>
+                <a href="{% url 'products' %}?category=eggs" class="dropdown-item">Eggs</a>
+                <a href="{% url 'products' %}?category=butter" class="dropdown-item">Butter &amp; Spreads</a>
+                <a href="{% url 'products' %}?category=bread,eggs,butter" class="dropdown-item">All Basics</a>
             </div>
         </li>
 
@@ -41,10 +41,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
