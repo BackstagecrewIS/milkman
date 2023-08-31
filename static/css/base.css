@@ -101,6 +101,11 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.product-image {
+    height: 200px;
+    object-fit: contain;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
