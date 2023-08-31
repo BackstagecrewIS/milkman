@@ -106,6 +106,10 @@ a.category-badge > span.badge:hover {
     object-fit: contain;
 }
 
+.product-detail-heading {
+    font-weight: bold;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
