@@ -8,8 +8,8 @@ from .models import Order, OrderLineItem
 from products.models import Product
 from bag.contexts import bag_contents
 
-import json
 import stripe
+import json
 
 @require_POST
 def cache_checkout_data(request):
