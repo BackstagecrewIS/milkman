@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 /* from Bulma */
@@ -303,4 +303,34 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
+}
+
+/* Extra small screen, reduce menu items to fit */
+@media (max-width: 421px) {
+
+    h4 {
+        font-size: medium;
+    }
+
+    .list-inline-item {
+        font-size: small;
+        margin: 0 !important;
+    }
+
+    .product-image {
+        height: auto;
+    }
+
+    .decrement-qty, .increment-qty, .qty_input {
+        font-size: 0.5em;
+        
+    }
+
+    .table-sm {
+        font-size: smaller;
+    }
+
+    .table-sm td, .table-sm th {
+        padding: 0.1rem;
+    }
 }
