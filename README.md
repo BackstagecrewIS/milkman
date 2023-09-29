@@ -54,41 +54,7 @@ It is designed to be used on any device.
 
   Initial designs for the site. All pages to be responsive.
   
-  ![Landing Page](/faq/wireframes/landing.jpg "Landing Page")
-
-  On entering the site users see the overview of the company
-  
-  ![FAQ Page](/faq/wireframes/faq.jpg "FAQ Page")
-
-The FAQ page shows all categories in an accordion. Each category opens to show another accordion with the category's questions. Each question can be opened to show the answer.
-
-  ![Contact Page](/faq/wireframes/contact.jpg "Contact Page")
-
-The Contact page is for customers to send information or request quotes etc.
-
-  ![Register Page](/faq/wireframes/register.jpg "Register Page")
-
-The users can resister an account which allows them to ask a question.
-
-  ![Login Page](/faq/wireframes/login.jpg "Login Page")
-
-Once an account has been created, a returning customer can log to be able to ask questions
-
-  ![Ask a question](/faq/wireframes/ask.jpg "Ask a question")
-
-The ask question page where customers can post a question
-
-  ![List categories](/faq/wireframes/categories.jpg "List categories")
-
-The admin can see and edit or delete categories on the categories page
-
-  ![Edit Categories](/faq/wireframes/editC.jpg "Edit Categories")
-
-The edit category page which allows the admin to change the name of a category
-
-  ![Answer Questions](/faq/wireframes/answer.jpg "Answer Questions")
-
-  The answer questions accordion allows the admin to select a question to answer and they can then answer the question and assign it to a category.
+  The wireframes can be viewed in [Wireframes File](/wireframes.md)
 
 [Back to Index](#table-of-contents)
 
