@@ -1,11 +1,11 @@
 # Pete's Dairy
 
-[Link to the deployed site](# "Link to the site")
+[Not yet deployed](# "Link to the site")
 
 A basic site for a local dairy home delivery service
 It is designed to be used on any device.
 
-![Mockup images](# "Mockup Images")
+[Mockup images](https://ui.dev/amiresponsive?url=https://8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu105.gitpod.io/)
 
 ## Table of Contents
 
@@ -20,17 +20,58 @@ It is designed to be used on any device.
 ## User Experience (UX)
 
 * ### User Stories
-  - #### First Time Visitor Goals
-  
-  - #### Returning Visitor Goals
-    
-  - #### Frequent User Goals
+  #### Viewing and navigation 
+| # |As A/An| I want to    | So I Can  |
+|---|---------|-------------| -----|
+| 1 | Shopper | View a list of products | Select items to purchase|
+| 2 | Shopper | View a  specific category of products |Quickly find a product I am interested in without searching through all products |
+| 3 | Shopper | View product details| See price description, ingredients and allergens along with a other essential information |
+| 4 | Shopper | Quickly see special offers and deals | Take advantage of special offers and deals |
+| 5 | Shopper | See the total of my purchases | Keep a check on my spending |
 
+#### Registration and usder accounts
+| # |As A/An| I want to    | So I Can  |
+|---|---------|-------------| -----|
+| 6 | Site User | Easily register for an account | Build a personal account and view my profile |
+| 7 | Site User |Easily log in and out|Access my account information|
+| 8 | Site User |Recover my password if I forget it|Recover access to my account|
+| 9 | Site User |Receive an email confirmation after registering|Verify that my registration was successful|
+| 10 | Site User |Have a personal profile|View my order history, order confirmations and save my payment information|
+
+#### Sorting and searching
+| # |As A/An| I want to    | So I Can  |
+|---|---------|-------------| -----|
+| 11 | Shopper | Sort the list of available products | Easily identify best rated, best priced and category sorted products |
+| 12 | Shopper | Sort a category of products | Find the best rated or best priced product in a category or sort by product name |
+| 13 | Shopper | Sort multiple categories simultaneously | Find the best rated or best priced product across broad categories such as "Dairy" or "Basics" |
+| 14 | Shopper | Search for a product by name or description  | Find a specific product to purchase |
+| 15 | Shopper | Easily see what I've searched for and the number of results | Quickly decide if the product I'm searching for is available |
+
+#### Purchasing and checkout
+| # |As A/An| I want to    | So I Can  |
+|---|---------|-------------| -----|
+| 16 | Shopper | Easily select the product and quantity I wish to purchase | Ensure I don't select the wrong quantity when ordering |
+| 17 | Shopper | View items in my bag to be purchased | Identify the total cost of the order and what items I will receive |
+| 18 | Shopper | Adjust the quantity of the items in my bag | Easily make changes to my purchase before checkout |
+| 19 | Shopper | Easily enter my payment information | Checkout quickly without any hassles |
+| 20 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 21 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 22 | Shopper | Receive an email confirmation after checkout | Keep the confirmation of what I've purchased for my records |
+
+#### Admin and store management
+| # |As A/An| I want to    | So I Can  |
+|---|---------|-------------| -----|
+| 23 | Shopper | Add a product | Add new items to my store |
+| 24 | Shopper | Edit or update a product | Change product price, description, images and other criteria |
+| 25 | Shopper | Delete a product | Remove items that are no longer available |
+
+
+## Design Strategy
     
 * Design Considerations
   - Colour Scheme
   
-  The colour scheme is the standard bootstrap colour scheme using white background, black text and black or white buttons.
+  The colour scheme is the standard bootstrap colour scheme adapted to have white background, black text and black or white buttons.
 
   Messages will displayed using bootstrap toasts in a simple pop up
 
@@ -42,11 +83,11 @@ It is designed to be used on any device.
   
   - Typography
     
-    For simplicity, only one font style will be used. The Lato font is a clear sans-serif font which works well for all elements of the site. The fallback sans-serif is specified in case the Poppins font fails to load.
+    For simplicity, only one font style will be used. The Lato font is a clear sans-serif font which works well for all elements of the site. The fallback sans-serif is specified in case the Lato font fails to load.
     
   - Imagery
   
-    Hero Image created using Photoshop and an image from [Photo by Klaus Hollederer from Pexels:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
+    Hero Image created using Photoshop and an image from Pexels [Photo by Klaus Hollederer:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
 
     The icons used are sourced from [Font Awesome](https://fontawesome.com/)
     
@@ -54,131 +95,171 @@ It is designed to be used on any device.
 
   Initial designs for the site. All pages to be responsive.
   
-  The wireframes can be viewed in [Wireframes File](/wireframes.md)
+  The wireframes can be viewed in a separate [Wireframes File](/wireframes.md)
 
 [Back to Index](#table-of-contents)
 
-## Design Strategy
 
 ### The strategy plane:
-**What are you aiming to achieve in the first place and for whom?**
+***What are you aiming to achieve in the first place and for whom?***
 
-*** Users
-The site is designed to allow visitors to the site to register and ask questions of the site owner.
+#### Users
+Users should be able to use the site without needing additional instruction.
+
+The interface should be simple and work on a variety of devices.
+
+Users will be able to select and pay for items for delivery the next day
+
+#### Admin
+Store owners need to be able to manage the products in the store
+
+
+### The scope plane:
+**Which features, based on information from the strategy plane, do you want to include in your design?**
+
+***Must Have***
+#### Users
+
+Users must be able to view all products
+
+Users must be able to view products by category
+
+Users must be able to view details of each product
+
+Users must be able to see special offers and deals
+
+Users must be able to see the total of their purchases
+
+Users must be able to choose an item and select the quantity to buy
+
+Users must be able to see a shopping bag of items before completing their purchase
+
+Users must be able to change the quantity of items in the shopping bag before conpleting their purchase
+
+Users must be able to easily enter payment information
+
+Users must receive an email confirmation of their order
+
+#### Admin
+Store managers must be able to add new products
+
+Store managers must be able to Edit or update the products
+
+Store managers must be able to delete products
+
+Store managers must be able to add product images to each product
+
+***Should Have***
+#### Users
 
 Users should be able to use the site without needing additional instruction.
 
 The interface should be simple and work on a variety of devices.
 
-Submitted questions should be visible to users with a default answer ("Awaiting answer") until they are answered by the admin.
+Users should be able to make a purchase with or without an account.
 
-***Admin
-Once answered, questions should be assigned to an appropriate category to help other users to find the answer to their question.
+The site should allow users of the site to register and create a personal profile.
 
-The admin should be able to create and edit categories.
+Users should be able to save their payment information
 
-The admin should be able to assign questions to categories.
+Users should be able to amend their profile information
 
-Each question should be able to belong to only one category.
+Users should receive a confirmation email on account creation
 
-### The scope plane:
-**Which features, based on information from the strategy plane, do you want to include in your design?**
+Users should be able to easily log in and out
 
-**Must Have**
+Users should feel confident that their purchase information is secure
 
-Users must be able to submit questions.
+Users should receive confirmation of their order once complete
 
-Questions and answers must be displayed on the page.
+#### Admin
 
-There must be a contact form
+Admins should be able to add images regardless of size
 
-Admins must be able to answer a question and assign it to one of the categories.
+***Could Have***
 
-Admins must be able to add and edit categories.
+#### Users ####
 
-**Could Have**
+Users could be able to delete their profile and information
 
-When a new question is submitted, it could automatically be assigned to a "Pending" category
+#### Admin ####
 
+Store managers could be able to remove orphaned product images
 
-**Future plans**
+***Future plans***
 
-A future version could allow users to upvote answers to affect their position in the list
+#### Users ####
 
-A furture version could include a password recovery option using the user's email address.
+A future version could allow users to select a delivery date
 
-When a new question is submitted, it could send an email notification to an admin
+A furture version could allow users to select a repeat order for regular delivery
+
+#### Admin ####
+
+Admins could be able to enter a quantity of available products to signify when a product is low or out of stock
 
 **Usability**
+
 Users are assumed to be accessing the site on a mobile device so the site should adopt a mobile first design.
 
 Users should be able to navigate the site without instructions, so navigation should be intuitive.
 
 For the initial build, this site will incorporate:
-* The basic pages.
+* The basic product pages
+* Product detail page
+* Basic navigation menu for All products, Dairy, Basics and Special Offers. With sub-menus to narrow the product category
+* A User menu to access user registration, login and profile. with product management option for site admins
+* Search option to find a product 
+* Sort options by Price, Category, A-Z, Rating.
+* Shopping bag page with options to edit quantity or delete item
+* Checkout page to take payment
+* Payment confirmation page
 * Registration and login pages
-* A form to submit a new question.
-* A contact form
-* An Accordion section will contain the category headings allowing quick access to each category's answers.
-* An Admin area to answer questions
-* An admin area to add and edit categories.
+* Profile page with options to edit
+* Admin page to add product
+* Admin page to edit product
+* Admin option to delete product
 
 **Future Development:**
-* An voting system to allow users to upvote answers.
-* Password recovery option
-* email notifications of new questions and answers
+* Add a stock control system to show low and out of stock items.
+* Allow users to choose a delivery date and time
+* Allow users to set up a regular (ie weekly) order for the same products
+
 
 ### The structure plane:
 **How is the information structured and how is it logically grouped?**
 
 The information should be grouped by;
 
-* The landing page will show the basic company information.
-* This is a small website for the company and the FAQ is just one section of the site.
-* The main FAQ page will contain the Accordion section with answer categories. 
-* A page will contain the Ask Question form.
-* A page will handle the user registration.
-* A page will handle the user profile including account deletion
-* Terms and conditions for registration should be on a modal.
-
-* Admin functions will only be visible to the admin user. 
-
+* The landing page will show the welcome page and menus
+* Products pages will show categories and search results
+* Product details page will show all details of a selected product 
+* Shopping bag page will show items added for purchase
+* Checkout page will allow the user to enter delivery details and payment information
+* Profile page will allow users to edit and save address details
+* Product Management page will allow admins to add a product
+* Edit product page will allow admins to edit product details
+* Admin functions will only be visible to the admin user
 
 ### The skeleton plane:
 **How will our information be represented, and how will the user navigate to the information and the features?**
 
-The main user page will contain a menu which allows users and the admin to login and access further pages
+All main pages will contain a user menu which allows admins to login and access further pages. Users will be able to register and log in to see their profile information.
 
-Messages will be displayed to tell the user their question has been submitted and to confirm actions.
+All main pages will contain a navigation menu which allows the user to select a product category or list all products by price or rating
+
+A search function will allow the user to search for a product
 
 ### The surface plane:
 **What will the finished product look like? What colors, typography, and design elements will we use?**
 
-Wireframes for the site are below:
+Wireframes for the site can be viewed in a separate [Wireframes File](/wireframes.md)
 
-Initial designs for the site. All pages to be responsive.
-  
-  ![Landing Page](/faq/wireframes/landing.jpg "Landing Page")
-  
-  ![FAQ Page](/faq/wireframes/faq.jpg "FAQ Page")
+All pages to be responsive.
 
-  ![Contact Page](/faq/wireframes/contact.jpg "Contact Page")
+The pages will use the customised Bootstrap elements throughout.
 
-  ![Register Page](/faq/wireframes/register.jpg "Register Page")
-
-  ![Login Page](/faq/wireframes/login.jpg "Login Page")
-
-  ![Ask a question](/faq/wireframes/ask.jpg "Ask a question")
-
-  ![List categories](/faq/wireframes/categories.jpg "List categories")
-
-  ![Edit Categories](/faq/wireframes/editC.jpg "Edit Categories")
-
-  ![Answer Questions](/faq/wireframes/answer.jpg "Answer Questions")
-
-The pages will use the default Bootstrap colours for all elements.
-
-Messages will be yellow on a black background.
+Messages will be displayed using toasts to notify the user of the results of action such as adding a product to the bag or deleting a product.
 
 [Back to Index](#table-of-contents)
 
@@ -203,13 +284,17 @@ Navigation and use of the website must be intuitive allowing the user to be able
 
 ## Frameworks, Libraries & Programs Used
 
-[Bootstrap 5.3.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+[Bootstrap 4.4](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 Bootstrap was used to assist with the responsiveness and styling of the website.
 
 [Google Fonts:](https://fonts.google.com/)
-Google fonts were used to import the 'Poppins' font into the style.css file which is used on all pages throughout the project.
+Google fonts were used to import the 'Lato' font into the style.css file which is used on all pages throughout the project.
 
 [jQuery:](https://en.wikipedia.org/wiki/JQuery) is used for additional functions in Bootstrap function.
+
+[AllAuth](https://www.codingninjas.com/studio/library/django-allauth-setup-and-configuration) User management functions handled by AllAuth
+
+[Stripe](https://stripe.com/) is used to handle all payments
 
 [Git:](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
@@ -217,7 +302,9 @@ Google fonts were used to import the 'Poppins' font into the style.css file whic
 
 ## Image Credits
 
-Hero Image from [Backstagecrew](https://backstagecrew.com)
+Hero Image created using Photoshop and an image from Pexels [Photo by Klaus Hollederer:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
+
+All product images sourced from [Pexels]( https://www.pexels.com/)
 
 [Back to Index](#table-of-contents)
 
@@ -232,45 +319,51 @@ W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator
 ## Testing User Stories from User Experience (UX) Section
 
 * ### User Stories
-  - #### First Time Visitor Goals
-  
-    a. As a first time visitor, I would like to be able to register to ask questions.
+  #### Viewing and navigation 
+| # | As A/An | I want to | So I Can | Satisfied by |
+|---|---------|-------------| -----| ---------- |
+| 1 | Shopper | View a list of products | Select items to purchase | Main products page lists all products |
+| 2 | Shopper | View a specific category of products | Quickly find a product I am interested in without searching through all products | Main nav menu allows a user to select a category to view |
+| 3 | Shopper | View product details | See price description, ingredients and allergens along with a other essential information | Selecting a product in the products page opens the product details page |
+| 4 | Shopper | Quickly see special offers and deals | Take advantage of special offers and deals | The main nav menu has an offer option to select deals or clearance products |
+| 5 | Shopper | See the total of my purchases | Keep a check on my spending | The shopping bag page displays a subtotal for each itam and a total for the bag |
 
-    There is a registration page to allow users to create an account which will allow them to ask a question
-  
-    b. As a first time visitor, I want to be able to ask a question without needing further instructions.
+#### Registration and usder accounts
+| # | As A/An | I want to | So I Can | Satisfied by |
+|---|---------|-------------| -----| ---------- |
+| 6 | Site User | Easily register for an account | Build a personal account and view my profile | The user menu takes the user to the registration page to create their account |
+| 7 | Site User | Easily log in and out | Access my account information | The nav menu takes the user to the login page |
+| 8 | Site User | Recover my password if I forget it | Recover access to my account | The login page has a 'forgot password' option handled by AllAuth |
+| 9 | Site User | Receive an email confirmation after registering | Verify that my registration was successful | Handled by AllAuth |
+| 10 | Site User | Have a personal profile | View my order history, order confirmations and save my payment information | Profile page allows users to edit and save delivery information |
 
-    On clicking the 'Ask Quesion" button, if the user is not logged in, a modal will prompt the user to log in or register a new account.
+#### Sorting and searching
+| # | As A/An | I want to | So I Can | Satisfied by |
+|---|---------|-------------| -----| ---------- |
+| 11 | Shopper | Sort the list of available products | Easily identify best rated, best priced and category sorted products | Main nav allows selection of categories. Products page allows filtering by Price, Rating, Name or Category |
+| 12 | Shopper | Sort a category of products | Find the best rated or best priced product in a category or sort by product name | Main nav allows selection of categories. Products page allows filtering by Price, Rating, Name or Category |
+| 13 | Shopper | Sort multiple categories simultaneously | Find the best rated or best priced product across broad categories such as "Dairy" or "Basics" | The main nav selects products across broad categories by selecting All Dairy or All Basics |
+| 14 | Shopper | Search for a product by name or description  | Find a specific product to purchase | The search function allows users to find a search term in the product name or description |
+| 15 | Shopper | Easily see what I've searched for and the number of results | Quickly decide if the product I'm searching for is available | The search results will be displayed on the products page |
 
-  ![User not logged in modal](/faq/static/images/modal1.JPG "User not logged in modal")
+#### Purchasing and checkout
+| # | As A/An | I want to | So I Can | Satisfied by |
+|---|---------|-------------| -----| ---------- |
+| 16 | Shopper | Easily select the product and quantity I wish to purchase | Ensure I don't select the wrong quantity when ordering | The shopping bag allows the user to see and amend the quantity of each item |
+| 17 | Shopper | View items in my bag to be purchased | Identify the total cost of the order and what items I will receive | The shopping bag displays all items selected for purchase |
+| 18 | Shopper | Adjust the quantity of the items in my bag | Easily make changes to my purchase before checkout | The shopping bag allows the user to see and amend the quantity of each item |
+| 19 | Shopper | Easily enter my payment information | Checkout quickly without any hassles | Payments handled by Stripe |
+| 20 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase | Payments handled by Stripe |
+| 21 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes | Order confirmation page shows all order details after processing by Stripe |
+| 22 | Shopper | Receive an email confirmation after checkout | Keep the confirmation of what I've purchased for my records | Checkout success page emails the user with order confirmation information |
 
-    c. As a first time visitor, I want to be able to see if my question has already been answered.
+#### Admin and store management
+| # | As A/An | I want to | So I Can | Satisfied by |
+|---|---------|-------------| -----| ---------- |
+| 23 | Shopper | Add a product | Add new items to my store | Product management page allows the admin to add a new product |
+| 24 | Shopper | Edit or update a product | Change product price, description, images and other criteria | When logged in, an admin has the options to edit each product on the product and product detail pages |
+| 25 | Shopper | Delete a product | Remove items that are no longer available | When logged in, an admin has the option to delete each product on the product and product detail pages  |
 
-    All visitors can access the questions and answers without having to create an account
-    
-  - #### Returning Visitor Goals
-  
-    a. As a returning visitor, I want to be able to see if the question I asked, has been answered.
-
-    A logged in user can see their questions and answers when logged into their profile page
-
-    b. As a returning visitor, I want to be able to delete a question I asked
-
-    The questions on the user's profile page each have a delete button to give the option to delete
-
-    c. As a returning visitor, I would like to contact the site owner
-
-    There is a contact form 
-    
-  - #### Frequent User Goals
-  
-    a. As a frequent user, I want to be able to browse the questions asked by others.
-
-    All users can see the questions and answers on the faq page
-
-    b. As a frequent user, I want to be able to delete my account and all questions I asked
-
-    The user profile page has an option to delete the user account. This will also automatically delete all that users questions
     
 ### Further Testing
 
@@ -288,75 +381,66 @@ While building the register function, I used conditional print statements to che
 
 #### Testing the user and admin options.
 
-All of the nav links were tested from each page for functionality before the conditionals were added to restrict access to users or admins as apppropriate.
-These links were then tested again from each page with logged in user and admin omly options to confirm that they funtion correctly.
-
-The functionality of the user asking questions has been checked to ensure that the user can only post when logged in and that the question can only be deleted by the user.
-
-The answer question function has been tested to ensure that only the admin can answer questions and assign a category to the question.
-
-Only the admin is able to create, edit and delete categories. This has been checked to ensure the non-admin users do not have this ability.
-
-Test questions and answers have been submitted, assigned to categories and then the category deleted to ensure that the cascade workes to delete the appropriate questions.
-
-Test questions and answers have been submitted, assigned to categories and then the user deleted to ensure that the cascade workes to delete the appropriate questions.
+All of the nav links were tested from each page for functionality both while logged out and logged in to confirm that they funtion correctly.
 
 
 #### Layout tests
 
 The Website was tested on Google Chrome on both a laptop, tablet and mobile phone for functionality and responsiveness
 
-The responsivity of the website was checked on a variety of devices using [Responsive Design Checkers](https://responsivedesignchecker.com/checker.php?url=app-faq.herokuapp.com&width=1500&height=1200) and [AmIResponsive](https://ui.dev/amiresponsive?url=https://app-faq.herokuapp.com)
+The responsivity of the website was checked on a variety of devices using [Responsive Design Checkers](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2F8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu105.gitpod.io%2F&width=1500&height=1200) and [AmIResponsive](https://ui.dev/amiresponsive?url=https://8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu105.gitpod.io/)
 
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Solved Bugs
 
-Bug: Form data not being passed to the @app.route
+Bug: 
 
-Cause: The form was built with `id` attributes but not `name` attributes
+Cause: 
 
-Solution: Added `name` attributes to the form elements
-
-------------------------------------------------------------
-
-Bug: The 'Ask Question button on the faq page allowed anyone to ask a question without logging in
-
-Cause: All users need to be able to view the faq whether logged in or not.
-
-Solution: Add a pop up modal if the usert is not logged in, to offer a redirect to register page
+Solution: 
 
 ------------------------------------------------------------
 
-Bug: userid session not set on registration enabling the user to ask a question without an id which throws an error
+Bug: 
 
-Cause: userid session set on login only
+Cause: 
 
-Solution: added userid session declaration into register route
+Solution: 
 
-------------------------------------------------------------
-
-Bug: User 'logged out' message not showing on logout
-
-Cause: Flashed messages are session variables and are cleared when the session is cleared.
-
-Solution: Call session.clear() before setting the flashed message
 
 ------------------------------------------------------------
 
-Bug: Unable to add questions on initial deployment.
+Bug: 
 
-Cause: New questions assigned to category-name 'Unanswered' with category.id '0'. Category doesn't exist on creation
+Cause: 
 
-Solution: Add conditional in categories route to check category.id[0] exists and add if not create it
+Solution: 
+
 
 ------------------------------------------------------------
 
-Bug: No way to create first user as admin.
+Bug: 
 
-Cause: All users are created as non-admin by default
+Cause: 
 
-Solution: Check if admin exists and if not, add first user as admin on registration
+Solution: 
+
+------------------------------------------------------------
+
+Bug: 
+
+Cause: 
+
+Solution: 
+
+------------------------------------------------------------
+
+Bug: 
+
+Cause: 
+
+Solution: 
 
 
 [Back to Index](#table-of-contents)
