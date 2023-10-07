@@ -1,1 +1,1 @@
-web: gunicorn app-milkman.wsgi:application
+web: gunicorn milkman.wsgi:application
