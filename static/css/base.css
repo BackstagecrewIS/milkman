@@ -296,7 +296,7 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 130px;
     }
 
     body {
@@ -305,8 +305,8 @@ input[name='q']::placeholder {
 
 }
 
-/* Extra small screen, reduce menu items to fit */
-@media (max-width: 421px) {
+/* Small screen, reduce menu items to fit */
+@media (max-width: 470px) {
 
     h4 {
         font-size: medium;
@@ -318,7 +318,8 @@ input[name='q']::placeholder {
     }
 
     .product-image {
-        height: auto;
+        height: 200px;
+        object-fit: contain;
     }
 
     .decrement-qty, .increment-qty, .qty_input {
@@ -333,4 +334,22 @@ input[name='q']::placeholder {
     .table-sm td, .table-sm th {
         padding: 0.1rem;
     }
+
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+    }
+}
+
+/* Extra small screen, reduce menu items to fit */
+@media (max-width: 360px) {
+    
+    h4 {
+        font-size: smaller;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
 }
