@@ -86,7 +86,6 @@ body {
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
-
 }
 
 .btt-button {
@@ -101,6 +100,10 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.qty_input {
+    text-align: center;
 }
 
 input[name='q']::placeholder {
@@ -289,15 +292,12 @@ input[name='q']::placeholder {
 
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 116px;
     }
 }
     
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
 
     body {
         height: calc(100vh - 116px);
@@ -313,6 +313,10 @@ input[name='q']::placeholder {
 
     .nav-link i.fa-lg {
         font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0.5rem;
     }
 
     .navbar-toggler {
