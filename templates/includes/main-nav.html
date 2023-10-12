@@ -5,8 +5,10 @@
                 Home
             </a>
         </li>
-        <li class="nav-item dropdown">
-            
+        <li class="nav-item dropdown"> 
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
@@ -16,10 +18,10 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="dairy-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dairy
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="dairy-link">
                 <a href="{% url 'products' %}?category=milk" class="dropdown-item">Milk</a>
                 <a href="{% url 'products' %}?category=yoghurt" class="dropdown-item">Yoghurt</a>
                 <a href="{% url 'products' %}?category=cheese" class="dropdown-item">Cheese</a>
@@ -28,10 +30,10 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="basics-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Basics
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0" aria-labelledby="basics-link">
                 <a href="{% url 'products' %}?category=bread" class="dropdown-item">Bread</a>
                 <a href="{% url 'products' %}?category=eggs" class="dropdown-item">Eggs</a>
                 <a href="{% url 'products' %}?category=butter" class="dropdown-item">Butter &amp; Spreads</a>
