@@ -397,37 +397,37 @@ Friends and family members were asked to review the site and documentation to po
 
 ### Solved Bugs
 
-Bug: 
+Bug: noimage.png not loading for missing images
 
-Cause: 
+Cause: noimage.png not added to media folder
 
-Solution: 
-
-------------------------------------------------------------
-
-Bug: 
-
-Cause: 
-
-Solution: 
-
+Solution: Upload noimage.png to media folder
 
 ------------------------------------------------------------
 
-Bug: 
+Bug: Images loading in their native size which means all images would need to be cropped to a standard size.
 
-Cause: 
+Cause: No css for product images assuming all images the same size when uploaded
 
-Solution: 
+Solution: Create new class of product-image with height: 200px and object-fit: contain; in base.css to over-ride image defaults
 
 
 ------------------------------------------------------------
 
-Bug: 
+Bug: Order totals in order confirmation emails showing 14 decimal places
 
-Cause: 
+Cause: Missing formatting on variables
 
-Solution: 
+Solution: Added floatformat:2 to the variables
+
+
+------------------------------------------------------------
+
+Bug: Page headings not centered on some pages
+
+Cause: Missing styling for headings on some pages
+
+Solution: Ensure all headings contain text-center class
 
 ------------------------------------------------------------
 
