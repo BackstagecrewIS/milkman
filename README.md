@@ -290,6 +290,9 @@ Bootstrap was used to assist with the responsiveness and styling of the website.
 [Google Fonts:](https://fonts.google.com/)
 Google fonts were used to import the 'Lato' font into the style.css file which is used on all pages throughout the project.
 
+[Fontawesome:](https://fontawesome.com/)
+Fontawesome used for icons throughout the site.
+
 [jQuery:](https://en.wikipedia.org/wiki/JQuery) is used for additional functions in Bootstrap function.
 
 [AllAuth](https://www.codingninjas.com/studio/library/django-allauth-setup-and-configuration) User management functions handled by AllAuth
@@ -526,26 +529,24 @@ Click [Here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for 
 
 14. Go to the Settings tab of your new app
 
-15. Click Reveal Config Vars, then add the config variables from the env.py file
+15. Return to your ElephantSQL tab and copy your database URL
 
-16. Return to your ElephantSQL tab and copy your database URL
+16. Back on Heroku, add a Config Var called DATABASE_URL and paste your ElephantSQL database URL in as the value. Make sure you click “Add”
 
-17. Back on Heroku, add a Config Var called DATABASE_URL and paste your ElephantSQL database URL in as the value. Make sure you click “Add”
+17. Navigate to the “Deploy” tab of your app
 
-18. Navigate to the “Deploy” tab of your app
+18. In the Deployment method section, select “Connect to GitHub”
 
-19. In the Deployment method section, select “Connect to GitHub”
-
-20. Search for your repo and click Connect
+19. Search for your repo and click Connect
     Optional: You can click Enable Automatic Deploys in case you make any further changes to the project. This will trigger any time code is pushed to your GitHub repository
 
-21. As we already have all our changes pushed to GitHub, we will use the Manual deploy section and click Deploy Branch. This will start the build process
+20. As we already have all our changes pushed to GitHub, we will use the Manual deploy section and click Deploy Branch. This will start the build process
 
-22. Now, we have our project in place, and we have an empty database ready for use. We still need to add our tables to our database. To do this, we can click the “More” button and select “Run console”
+21. Now, we have our project in place, and we have an empty database ready for use. We still need to add our tables to our database. To do this, we can click the “More” button and select “Run console”
 
-23. Type python3 into the console and click Run
+22. Type python3 into the console and click Run
 
-24. This opens the Python terminal. Now create the tables with the commands:
+23. This opens the Python terminal. Now create the tables with the commands:
 
   `from taskmanager import db`
 
@@ -559,9 +560,7 @@ Click [Here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for 
 
 Nav, Buttons, Cards, Modals Adapted from example code at [Bootstrap](https://getbootstrap.com/)
 
-Nested Accordion adapted from [CodePen](https://codepen.io/WinterSilence/pen/abpopXa)
-
-Hero image CSS adapted from [W3Schools](https://www.w3schools.com/howto/howto_css_hero_image.asp)
+Hero image CSS adapted from [](https://www.w3schools.com/howto/howto_css_hero_image.asp)
 
 Hero Image from [Backstagecrew](https://backstagecrew.com)
 
