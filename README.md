@@ -87,7 +87,7 @@ It is designed to be used on any device.
     
   - Imagery
   
-    Hero Image created using Photoshop and an image from Pexels [Photo by Klaus Hollederer:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
+    Hero Images created using Photoshop and an image from Pexels [Photo by Klaus Hollederer:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
 
     The icons used are sourced from [Font Awesome](https://fontawesome.com/)
     
@@ -201,6 +201,19 @@ Admins could be able to enter a quantity of available products to signify when a
 **Usability**
 
 Users are assumed to be accessing the site on a mobile device so the site should adopt a mobile first design.
+
+Common Screen Resolutions for Mobile in 2023
+|Resolution|Users
+|---|---|
+|360×800 |(11.01%)|
+|390×844 |(7.92%)|
+|414×896 |(5.55%)|
+|393×873 |(5.26)|
+|412×915 |(5%)|
+
+[Source:](https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design#:~:text=Book%20for%20More-,Common%20Screen%20Resolutions%20for%20Mobile%20in%202023,412%C3%97915%C2%A0%20%C2%A0%20%C2%A0%20(5%25),-Image%20Source)
+
+The site will be designed to work on screens above 300px
 
 Users should be able to navigate the site without instructions, so navigation should be intuitive.
 
@@ -428,6 +441,62 @@ Bug: Page headings not centered on some pages
 Cause: Missing styling for headings on some pages
 
 Solution: Ensure all headings contain text-center class
+
+------------------------------------------------------------
+
+Bug: Background image goes off screen on smaller displays
+
+Cause: Large image overflows screen edge
+
+Solution: Add new background image for smaller screens
+
+------------------------------------------------------------
+
+Bug: Headline text in index.html obscured by background image on smaller screens
+
+Cause: Image and headline text similar colours with little contrast
+
+Solution: Add 1px stroke to the headline text to give contrast against background
+
+------------------------------------------------------------
+
+Bug: 
+
+Cause: 
+
+Solution: 
+
+------------------------------------------------------------
+
+Bug: 
+
+Cause: 
+
+Solution: 
+
+------------------------------------------------------------
+
+Bug: 
+
+Cause: 
+
+Solution: 
+
+------------------------------------------------------------
+
+Bug: 
+
+Cause: 
+
+Solution: 
+
+------------------------------------------------------------
+
+Bug: 
+
+Cause: 
+
+Solution: 
 
 ------------------------------------------------------------
 
