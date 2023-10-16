@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Pete's Dairy Confirmation for Order Number {{ order.order_number }}
