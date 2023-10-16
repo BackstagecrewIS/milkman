@@ -460,11 +460,11 @@ Solution: Add 1px stroke to the headline text to give contrast against backgroun
 
 ------------------------------------------------------------
 
-Bug: 
+Bug: Incorrect details in confirmation email subject
 
-Cause: 
+Cause: Incorrect site name in confirmation_email_subject.txt
 
-Solution: 
+Solution: Updated confirmation_email_subject.txt
 
 ------------------------------------------------------------
 
