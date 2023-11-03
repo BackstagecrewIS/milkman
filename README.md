@@ -1,11 +1,11 @@
 # Pete's Dairy
 
-[Not yet deployed](# "Link to the site")
+[Deployed project](https://app-milkman-1c8cec7719a8.herokuapp.com/ "Link to the site")
 
 A basic site for a local dairy home delivery service
 It is designed to be used on any device.
 
-[Mockup images](https://ui.dev/amiresponsive?url=https://8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu105.gitpod.io/)
+[Mockup images](/media/docs/Responsive-Screenshot.png)
 
 ## Table of Contents
 
@@ -95,7 +95,7 @@ It is designed to be used on any device.
 
   Initial designs for the site. All pages to be responsive.
   
-  The wireframes can be viewed in a separate [Wireframes File](/wireframes.md)
+  The wireframes can be viewed in a separate [Wireframes MD File](/wireframes.md)
 
 [Back to Index](#table-of-contents)
 
@@ -134,7 +134,7 @@ Users must be able to choose an item and select the quantity to buy
 
 Users must be able to see a shopping bag of items before completing their purchase
 
-Users must be able to change the quantity of items in the shopping bag before conpleting their purchase
+Users must be able to change the quantity of items in the shopping bag before completing their purchase
 
 Users must be able to easily enter payment information
 
@@ -213,7 +213,7 @@ Common Screen Resolutions for Mobile in 2023
 
 [Source:](https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design#:~:text=Book%20for%20More-,Common%20Screen%20Resolutions%20for%20Mobile%20in%202023,412%C3%97915%C2%A0%20%C2%A0%20%C2%A0%20(5%25),-Image%20Source)
 
-The site will be designed to work on screens above 300px
+The site will be designed to work on screens above 350px
 
 Users should be able to navigate the site without instructions, so navigation should be intuitive.
 
@@ -266,7 +266,7 @@ A search function will allow the user to search for a product
 ### The surface plane:
 **What will the finished product look like? What colors, typography, and design elements will we use?**
 
-Wireframes for the site can be viewed in a separate [Wireframes File](/wireframes.md)
+Wireframes for the site can be viewed in a separate [Wireframes MD File](/wireframes.md)
 
 All pages to be responsive.
 
@@ -306,7 +306,7 @@ Google fonts were used to import the 'Lato' font into the style.css file which i
 [Fontawesome:](https://fontawesome.com/)
 Fontawesome used for icons throughout the site.
 
-[jQuery:](https://en.wikipedia.org/wiki/JQuery) is used for additional functions in Bootstrap function.
+[jQuery:](https://en.wikipedia.org/wiki/JQuery) is used for additional functions in Bootstrap.
 
 [AllAuth](https://www.codingninjas.com/studio/library/django-allauth-setup-and-configuration) User management functions handled by AllAuth
 
@@ -316,11 +316,15 @@ Fontawesome used for icons throughout the site.
 
 [GitHub:](https://github.com/) is used to store the projects code after being pushed from Git.
 
+[Photoshop](https://www.adobe.com/uk/products/photoshop.html) was used to edit images for the site
+
 ## Image Credits
 
 Hero Image created using Photoshop and an image from Pexels [Photo by Klaus Hollederer:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
 
 All product images sourced from [Pexels]( https://www.pexels.com/)
+
+Sample product information sourced from [Asda](https://groceries.asda.com/)
 
 [Back to Index](#table-of-contents)
 
@@ -328,9 +332,9 @@ All product images sourced from [Pexels]( https://www.pexels.com/)
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
 
-W3C Markup Validator - Results [link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fapp-faq.herokuapp.com%2F)
+W3C Markup Validator - Results [link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fapp-milkman-1c8cec7719a8.herokuapp.com%2F)
 
-W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fapp-faq.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#errors)
+W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fapp-milkman-1c8cec7719a8.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## Testing User Stories from User Experience (UX) Section
 
@@ -397,16 +401,16 @@ While building the register function, I used conditional print statements to che
 
 #### Testing the user and admin options.
 
-All of the nav links were tested from each page for functionality both while logged out and logged in to confirm that they funtion correctly.
+All of the nav links were tested from each page for functionality both while logged out and logged in to confirm that they funtion correctly and showed the correct options.
 
 
 #### Layout tests
 
 The Website was tested on Google Chrome on both a laptop, tablet and mobile phone for functionality and responsiveness
 
-The responsivity of the website was checked on a variety of devices using [Responsive Design Checkers](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2F8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu105.gitpod.io%2F&width=1500&height=1200) and [AmIResponsive](https://ui.dev/amiresponsive?url=https://8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu105.gitpod.io/)
+The responsivity of the website was checked on a variety of devices using [Responsive Design Checkers](https://responsivedesignchecker.com/checker.php) and [AmIResponsive](https://ui.dev/amiresponsive)
 
-Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+Friends and family members were asked to review the site and documentation to point out any spelling errors, bugs and/or user experience issues.
 
 ### Solved Bugs
 
@@ -468,70 +472,17 @@ Solution: Updated confirmation_email_subject.txt
 
 ------------------------------------------------------------
 
-Bug: 
+Bug: W3C CSS Validator found error in CSS
 
-Cause: 
+Cause: Missing minus sign in height attribute line 303
 
-Solution: 
-
-------------------------------------------------------------
-
-Bug: 
-
-Cause: 
-
-Solution: 
+Solution: Added minus sign
 
 ------------------------------------------------------------
-
-Bug: 
-
-Cause: 
-
-Solution: 
-
-------------------------------------------------------------
-
-Bug: 
-
-Cause: 
-
-Solution: 
-
-------------------------------------------------------------
-
-Bug: 
-
-Cause: 
-
-Solution: 
-
-------------------------------------------------------------
-
-Bug: 
-
-Cause: 
-
-Solution: 
-
 
 [Back to Index](#table-of-contents)
 
 ## Deployment
-
-### GitHub Pages
-
-The project was deployed to GitHub Pages using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/BackstagecrewIS)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section on the left column.
-4. Under "Source", select 'Deploy from Branch then click the dropdown called "None" and select "Main".
-5. Click Save to confirm the choice.
-6. Scroll back to the top of the page to locate the link to the published site in the "GitHub Pages" section.
-
-[Back to Index](#table-of-contents)
-
 
 ### Forking the GitHub Repository
 
@@ -544,7 +495,7 @@ A fork is a copy of a repository. Forking a repository allows you to freely expe
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/BackstagecrewIS/milkman)
 2. Under the repository name, click the Code button next to the green Gitpod button.
 3. To clone the repository using HTTPS, under the HTTPS tab, copy the link.
 4. Open Git Bash
@@ -552,11 +503,14 @@ A fork is a copy of a repository. Forking a repository allows you to freely expe
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/BackstagecrewIS/milkman
 ```
 7. Press Enter. Your local clone will be created.
 
 Click [Here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for the Github tutorial.
+
+
+[Back to Index](#table-of-contents)
 
 ### Deploying to Heroku
 
@@ -617,7 +571,7 @@ Click [Here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for 
 
 23. This opens the Python terminal. Now create the tables with the commands:
 
-  `from taskmanager import db`
+  `from milkman import db`
 
   `db.create_all()`
 
@@ -625,18 +579,224 @@ Click [Here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for 
 
 26. The app should be up and running now, so click the “Open app” button
 
+[Back to Index](#table-of-contents)
+
+### Create AWS Account and S3 bucket
+
+Navigate to aws.amazon.com and click on create an AWS account.
+
+Fill in your email address and a password, choose a username for your account, and select continue.
+
+On the account type page, select personal and fill out the required information.
+
+Click create account and continue.
+
+Enter a credit card number which will be used for billing
+if you go above the free usage limits.
+
+After you answer the verification questions and confirm the required information your account will be created.
+
+Once your account is created you can go back to aws.amazon.com and sign-in in the upper right by accessing the AWS management console under my account.
+
+Once you've signed in search for S3 to create a new bucket to store files.
+
+If you're asked to select a region select the one closest to you.
+
+Uncheck block all public access and acknowledge that the bucket will be public.
+
+Click create bucket.
+
+[Back to Index](#table-of-contents)
+
+### Set up AWS Bucket
+
+On the properties tab, turn on static website hosting.
+
+For the index and error document, just fill in some default values such as index.html and error.html.
+
+Click save.
+
+On the permissions tab 
+
+Paste in the coors configuration
+
+```
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+
+On the bucket policy tab.
+
+Select, policy generator to create a security policy for the S3 bucket.
+
+Allow all principals by using a star.
+
+The action will be "get object".
+
+Copy the Amazon Resource Name (ARN) from the previous tab.
+
+Paste it into the ARN box here at the bottom.
+
+Click Add statement.
+
+Then generate policy.
+
+Then copy this policy into the bucket policy editor.
+
+Add a slash star here onto the end of the resource key to allow access to all resources in this bucket.
+
+Click Save
+
+On the Access Control List tab
+
+Set the list objects permission for everyone under the Public Access section.
+
+[Back to Index](#table-of-contents)
+
+### Create User Access to S3 Bucket
+
+On the services menu, open IAM.
+
+Click groups then create a new group called manage-milkman-group.
+
+Click next step, and then next step again, then create group.
+
+Click policies and then create policy.
+
+Go to the JSON tab and then select import managed policy 
+
+Search for S3 and then import the S3 full access policy.
+
+Paste in the ARN
+
+Click review policy.
+
+Give it a name and a description.
+
+Click create policy.
+
+Go to groups, click manage-milkman-group and click attach policy.
+
+Search for the policy you just created and select it.
+
+Click attach policy.
+
+Create a user to put in the group.
+
+On the user's page, click add user.
+
+Create a user named milkman-staticfiles-user
+
+Give it programmatic access and select next.
+
+Click through to the end and then click create user.
+
+Download the CSV file with this users access key and secret access key
+
+[Back to Index](#table-of-contents)
+
+### Connect Django to AWS Bucket and upload static files
+
+In Heroku, add the AWS keys to the config variables.
+
+Set USE_AWS key to true.
+
+Set AWS_ACCESS_KEY_ID to the value from the credentials.csv file
+
+Set AWS_SECRET_ACCESS_KEY to the value from the credentials.csv file
+
+
+This will cause the collectstatic to search for and import all the static files into the S3 bucket.
+
+Commit and push files which will trigger an automatic deployment to Heroku.
+
+In S3, create a new folder called media.
+
+Inside the folder, click upload and Add files.
+
+Select all the product images
+
+Click Next
+
+Under manage public permissions, select grant public read access to these objects.
+
+Click next through to the end and then click upload
+
+[Back to Index](#table-of-contents)
+
+### Create Stripe account
+
+Go stripe.com and click start now.
+
+Create an account using email address, name and set a password.
+
+Click create to create the account.
+
+Confirm the email address.
+
+Get the test API key.
+
+### Connect to Stripe and Config Vars
+
+In Stripe account.
+
+Click developers.
+
+Click Test Mode.
+
+In the getting started panel, copy the publishable key and the secret key
+
+Set these as the following config vars in Heroku
+
+STRIPE_PUBLIC_KEY (Publishable Key)
+
+STRIPE_SECRET_KEY (Secret Key)
+
+Run the server to get the address of your site.
+
+Copy that and then go to the stripe dashboard.
+
+Click Developers
+
+Select the Webhooks tab and select add endpoint.
+
+Paste in the URL and add /checkout/wh onto the end.
+
+Click receive all events and then click add endpoint.
+
+Click to reveal the Signing Secret and copy.
+
+In Heroku Config Vars, set STRIPE_WH_SECRET to this value
+
+### Set up emails
+
+
+
 ## Credits
 
 Nav, Buttons, Cards, Modals Adapted from example code at [Bootstrap](https://getbootstrap.com/)
 
-Hero image CSS adapted from [](https://www.w3schools.com/howto/howto_css_hero_image.asp)
 
-Hero Image from [Backstagecrew](https://backstagecrew.com)
+Hero Image from [Pexels](https://www.pexels.com/photo/brown-and-white-cow-54550/) and adapted using photoshop
 
 Icons sourced from [Font Awesome](https://fontawesome.com/)
 
-Heroku deplyment sourced from [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DIWADRDB+2022_Q3/courseware/c0c31790fcf540539fd2bd3678b12406/6e44128b0b37416ab40c1a87ef2cb32a/)
+Heroku deplyment sourced from [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d90bfac64e564b41a177b65c34a63502/)
 
 Thanks go to my mentor Narender Singh for advice and guidance.
+
+Thanks to Kieron and the Student Support team for their help and encouragement during my illness.
 
 [Back to Index](#table-of-contents)
