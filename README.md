@@ -480,6 +480,18 @@ Solution: Added minus sign
 
 ------------------------------------------------------------
 
+Bug: Error on checkout when user not logged in
+
+Cause: Incorrect definition of bag_items in contexts.py
+
+Solution: Corrected definition
+
+### Linting Errors
+./checkout/apps.py:8:9: F401 'checkout.signals' imported but unused
+This shows as an error but is in fact used
+
+
+
 [Back to Index](#table-of-contents)
 
 ## Deployment

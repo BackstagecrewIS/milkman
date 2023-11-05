@@ -4,34 +4,33 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('products', '0001_initial'),
+        ("products", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='category',
-            options={'verbose_name_plural': 'Categories'},
+            name="category",
+            options={"verbose_name_plural": "Categories"},
         ),
         migrations.AddField(
-            model_name='product',
-            name='ingredients',
+            model_name="product",
+            name="ingredients",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='product',
-            name='lifespan',
+            model_name="product",
+            name="lifespan",
             field=models.CharField(blank=True, max_length=25, null=True),
         ),
         migrations.AddField(
-            model_name='product',
-            name='size',
+            model_name="product",
+            name="size",
             field=models.CharField(blank=True, max_length=25, null=True),
         ),
         migrations.AddField(
-            model_name='product',
-            name='storage',
+            model_name="product",
+            name="storage",
             field=models.TextField(blank=True, null=True),
         ),
     ]
