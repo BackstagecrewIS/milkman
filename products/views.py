@@ -152,3 +152,16 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, "Product deleted!")
     return redirect(reverse("products"))
+
+@login_required
+def delete_product_check(request, product_id):
+    """ Check before deleting a product """
+
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
+
+    product = get_object_or_404(Product, pk=product_id) 
+    messages.warning(request, f"You are deleting {product.name}")
+
+    return redirect(reverse("product_detail", args=[product.id]))

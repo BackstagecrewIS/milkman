@@ -10,4 +10,8 @@
     <div class="toast-body bg-white">
         {{ message }}        
     </div>
+    <div class="mt-2 pt-2 border-top">
+        <a class=" btn btn-outline-black btn-sm" href="{% url 'delete_product' product.id %}">OK</a>
+        <a class="btn btn-primary btn-sm" data-dismiss="toast">CANCEL</a>
+      </div>
 </div>
