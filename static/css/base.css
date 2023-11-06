@@ -290,6 +290,9 @@ input[name='q']::placeholder {
         z-index: 1030;
     }
 
+    .title-in-body {
+        display: none;
+    }
 
     .header-container {
         padding-top: 164px;
