@@ -28,7 +28,7 @@ DEBUG = "DEVELOPMENT" in os.environ
 
 ALLOWED_HOSTS = [
     "app-milkman-1c8cec7719a8.herokuapp.com",
-    "8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu105.gitpod.io",
+    "8000-backstagecrewis-milkman-gv8e3vmyqxk.ws-eu106.gitpod.io",
 ]
 
 
