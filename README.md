@@ -547,6 +547,9 @@ The only way to view and process orders is through the database admin. A future 
 ### Email Admin with new orders
 A function to email the store owner with each new order should be included.
 
+### Product Ratings
+The site is able to display product ratings but as yet there is no system in place to allow users to rate products
+
 [Back to Index](#table-of-contents)
 
 ## Deployment
