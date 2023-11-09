@@ -1,11 +1,12 @@
 # Pete's Dairy
 
+## Deployed Project
 [Deployed project](https://app-milkman-1c8cec7719a8.herokuapp.com/ "Link to the site")
 
 A basic site for a local dairy home delivery service
 It is designed to be used on any device.
 
-[Mockup images](/media/docs/Responsive-Screenshot.png)
+![Mockup images](/media/docs/Responsive-Screenshot.png)
 
 ## Table of Contents
 
@@ -14,6 +15,7 @@ It is designed to be used on any device.
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
+- [Future Development](#future-development)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
@@ -29,7 +31,7 @@ It is designed to be used on any device.
 | 4 | Shopper | Quickly see special offers and deals | Take advantage of special offers and deals |
 | 5 | Shopper | See the total of my purchases | Keep a check on my spending |
 
-#### Registration and usder accounts
+#### Registration and user accounts
 | # |As A/An| I want to    | So I Can  |
 |---|---------|-------------| -----|
 | 6 | Site User | Easily register for an account | Build a personal account and view my profile |
@@ -61,17 +63,18 @@ It is designed to be used on any device.
 #### Admin and store management
 | # |As A/An| I want to    | So I Can  |
 |---|---------|-------------| -----|
-| 23 | Shopper | Add a product | Add new items to my store |
-| 24 | Shopper | Edit or update a product | Change product price, description, images and other criteria |
-| 25 | Shopper | Delete a product | Remove items that are no longer available |
+| 23 | Shop Owner | Add a product | Add new items to my store |
+| 24 | Shop Owner | Edit or update a product | Change product price, description, images and other criteria |
+| 25 | Shop Owner | Delete a product | Remove items that are no longer available |
 
+[Back to Index](#table-of-contents)
 
 ## Design Strategy
     
 * Design Considerations
   - Colour Scheme
   
-  The colour scheme is the standard bootstrap colour scheme adapted to have white background, black text and black or white buttons.
+  The site uses a modified bootstrap scheme adapted to have white background, black text and black or white buttons.
 
   Messages will displayed using bootstrap toasts in a simple pop up
 
@@ -87,13 +90,14 @@ It is designed to be used on any device.
     
   - Imagery
   
-    Hero Images created using Photoshop and an image from Pexels [Photo by Klaus Hollederer:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
+    Hero Image created using Photoshop and an image from Pexels [Photo by Klaus Hollederer:]( https://www.pexels.com/photo/brown-and-white-cow-54550/)
 
     The icons used are sourced from [Font Awesome](https://fontawesome.com/)
     
   - Wireframes
 
-  Initial designs for the site. All pages to be responsive.
+  #### Initial designs for the site. 
+  All pages to be responsive.
   
   The wireframes can be viewed in a separate [Wireframes MD File](/wireframes.md)
 
@@ -252,7 +256,7 @@ The information should be grouped by;
 * Profile page will allow users to edit and save address details
 * Product Management page will allow admins to add a product
 * Edit product page will allow admins to edit product details
-* Admin functions will only be visible to the admin user
+* Admin functions will only be available to the admin user
 
 ### The skeleton plane:
 **How will our information be represented, and how will the user navigate to the information and the features?**
@@ -279,7 +283,7 @@ Messages will be displayed using toasts to notify the user of the results of act
 ## Features
 
 ### Responsive
-The site must be designed to work on on all devices from mobile to desktop.
+The site must be designed to work on all devices from mobile to desktop.
 
 ### Intuitive
 Navigation and use of the website must be intuitive allowing the user to be able to navigate the site without instructions
@@ -330,15 +334,18 @@ Sample product information sourced from [Asda](https://groceries.asda.com/)
 
 ## Testing
 
+Full testing can be viewed in a separate [Testing MD File](/tests.md)
+
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
 
 W3C Markup Validator - Results [link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fapp-milkman-1c8cec7719a8.herokuapp.com%2F)
 
 W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fapp-milkman-1c8cec7719a8.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-## Testing User Stories from User Experience (UX) Section
+### Testing User Stories from User Experience (UX)
 
-* ### User Stories
+### User Stories
+
   #### Viewing and navigation 
 | # | As A/An | I want to | So I Can | Satisfied by |
 |---|---------|-------------| -----| ---------- |
@@ -383,7 +390,6 @@ W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator
 | 23 | Shopper | Add a product | Add new items to my store | Product management page allows the admin to add a new product |
 | 24 | Shopper | Edit or update a product | Change product price, description, images and other criteria | When logged in, an admin has the options to edit each product on the product and product detail pages |
 | 25 | Shopper | Delete a product | Remove items that are no longer available | When logged in, an admin has the option to delete each product on the product and product detail pages  |
-
     
 ### Further Testing
 
@@ -403,7 +409,6 @@ While building the register function, I used conditional print statements to che
 
 All of the nav links were tested from each page for functionality both while logged out and logged in to confirm that they funtion correctly and showed the correct options.
 
-
 #### Layout tests
 
 The Website was tested on Google Chrome on both a laptop, tablet and mobile phone for functionality and responsiveness
@@ -420,16 +425,16 @@ Cause: noimage.png not added to media folder
 
 Solution: Upload noimage.png to media folder
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: Images loading in their native size which means all images would need to be cropped to a standard size.
 
 Cause: No css for product images assuming all images the same size when uploaded
 
-Solution: Create new class of product-image with height: 200px and object-fit: contain; in base.css to over-ride image defaults
+Solution: Create new class of product-image with height: 200px and object-fit: contain; in base.css to override image defaults
 
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: Order totals in order confirmation emails showing 14 decimal places
 
@@ -438,7 +443,7 @@ Cause: Missing formatting on variables
 Solution: Added floatformat:2 to the variables
 
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: Page headings not centered on some pages
 
@@ -446,7 +451,7 @@ Cause: Missing styling for headings on some pages
 
 Solution: Ensure all headings contain text-center class
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: Background image goes off screen on smaller displays
 
@@ -454,7 +459,7 @@ Cause: Large image overflows screen edge
 
 Solution: Add new background image for smaller screens
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: Headline text in index.html obscured by background image on smaller screens
 
@@ -462,7 +467,7 @@ Cause: Image and headline text similar colours with little contrast
 
 Solution: Add 1px stroke to the headline text to give contrast against background
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: Incorrect details in confirmation email subject
 
@@ -470,7 +475,7 @@ Cause: Incorrect site name in confirmation_email_subject.txt
 
 Solution: Updated confirmation_email_subject.txt
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: W3C CSS Validator found error in CSS
 
@@ -478,7 +483,7 @@ Cause: Missing minus sign in height attribute line 303
 
 Solution: Added minus sign
 
-------------------------------------------------------------
+-------------------------------------------------------
 
 Bug: Error on checkout when user not logged in
 
@@ -486,11 +491,61 @@ Cause: Incorrect definition of bag_items in contexts.py
 
 Solution: Corrected definition
 
+-------------------------------------------------------
+
+Bug: Page header (Pete's Dairy) not visible on smaller screens
+
+Cause: Hidden by media query due to lack of space
+
+Solution: Added to the hero image with new css to hide on larger screens
+
+-------------------------------------------------------
+
 ### Linting Errors
 ./checkout/apps.py:8:9: F401 'checkout.signals' imported but unused
 This shows as an error but is in fact used
 
+Some auto generated files left in place in case of future development. Imports commented out.
 
+[Back to Index](#table-of-contents)
+
+## Future Development 
+
+### Delivery Area
+As this is a local delivery service, there should be a limit to the areathat customers can order from. This could be managed by postcodes.
+A delivery area map should also be included.
+
+### Image Management
+Currently, when a product image is added to a product which is later deleted, the image remains in the media folder.
+An option should be included to remove this image if it is no longer required
+
+### Delivery Dates
+This is currently built for 'next day delivery'. An option should be added to allow customers to choose their delivery day.
+
+### Delete Profile
+An option for users to delete their profile should be added.
+
+### Stock Inventory
+A stock level field could be added to the product database to manage available stock and only show products which are in stock 
+
+### Add new product category
+It is only possible to add new product categories in the database admin. If this were to be added, there would also need to be a way to add the new category to the relevant menu.
+This will entail significant changes to the page navigation.
+An extra field in the category table to signify which dropdown menu the category should be in.
+The nav function would then have to read all categories for each dropdown to build it each time the page loads.
+
+### Edit Category
+At present, a category can only be edited in the database admin. As the menu is coded in main-nav.html, these changes will not be reflected in the menu items.
+This could be addressed in a similar way to new product categories.
+
+### Delete Category
+If a category is deleted, it will still appear in the menu. This should be resolved in a similar way to new product categories.
+
+### View Orders
+The only way to view and process orders is through the database admin. A future addition should have a page for the admin to see outstanding orders and to be able to mark them as fulfilled
+
+### Email Admin with new orders
+A function to email the store owner with each new order should be included.
 
 [Back to Index](#table-of-contents)
 
@@ -760,7 +815,7 @@ Confirm the email address.
 
 Get the test API key.
 
-### Connect to Stripe and Config Vars
+### Connect to Stripe and set Config Vars
 
 In Stripe account.
 
@@ -792,9 +847,33 @@ Click to reveal the Signing Secret and copy.
 
 In Heroku Config Vars, set STRIPE_WH_SECRET to this value
 
-### Set up emails
+### Set up emails with Gmail
 
+Go to gmail.com and create an account before starting
 
+Go to your Google Account.
+
+Select Security.
+
+Under "Signing in to Google," select 2-Step Verification.
+
+At the bottom of the page, select App passwords.
+
+Enter a name that helps you remember where you’ll use the app password.
+
+Select Generate.
+
+To enter the app password, follow the instructions on your screen. 
+
+The app password is the 16-character code that generates on your device.
+
+Copy this password
+
+Select Done.
+
+Go to the Heroku app to enter it as a config variable called EMAIL_HOST_PASS. And paste in the password and click Add.
+
+Set EMAIL_HOST_USER to your Gmail address
 
 ## Credits
 
@@ -805,7 +884,7 @@ Hero Image from [Pexels](https://www.pexels.com/photo/brown-and-white-cow-54550/
 
 Icons sourced from [Font Awesome](https://fontawesome.com/)
 
-Heroku deplyment sourced from [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d90bfac64e564b41a177b65c34a63502/)
+Heroku deployment sourced from [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d90bfac64e564b41a177b65c34a63502/)
 
 Thanks go to my mentor Narender Singh for advice and guidance.
 
