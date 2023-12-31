@@ -5,6 +5,7 @@ from django.db.models import Sum
 from django.conf import settings
 
 from django_countries.fields import CountryField
+from datetime import datetime, timedelta
 
 from products.models import Product
 from profiles.models import UserProfile
@@ -19,6 +20,15 @@ class Order(models.Model):
         blank=True,
         related_name="orders",
     )
+    DELIVER_CHOICES = (
+    ('Monday','Monday'),
+    ('Tuesday','Tuesday'),
+    ('Wednesday','Wednesday'),
+    ('Thursday','Thursday'),
+    ('Friday','Friday'),
+    ('Saturday','Saturday'),
+    ('Sunday','Sunday'),
+)
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
@@ -29,6 +39,7 @@ class Order(models.Model):
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
+    deliver_day = models.CharField(max_length=10, choices=DELIVER_CHOICES)
     delivery_cost = models.DecimalField(
         max_digits=6, decimal_places=2, null=False, default=0
     )

@@ -24,6 +24,7 @@ class OrderAdmin(admin.ModelAdmin):
         "order_number",
         "user_profile",
         "date",
+        "deliver_day",
         "full_name",
         "email",
         "phone_number",
@@ -42,6 +43,7 @@ class OrderAdmin(admin.ModelAdmin):
 
     list_display = (
         "order_number",
+        "deliver_day",
         "date",
         "full_name",
         "order_total",

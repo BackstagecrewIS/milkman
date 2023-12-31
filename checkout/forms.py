@@ -6,6 +6,7 @@ class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = (
+            "deliver_day",
             "full_name",
             "email",
             "phone_number",
@@ -24,6 +25,7 @@ class OrderForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
+            "deliver_day": "Delivery Day",
             "full_name": "Full Name",
             "email": "Email Address",
             "phone_number": "Phone Number",
