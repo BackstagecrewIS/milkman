@@ -112,7 +112,6 @@ class StripeWH_Handler:
             order = None
             try:
                 order = Order.objects.create(
-                    deliver_day=shipping_details.deliver_day,
                     full_name=shipping_details.name,
                     user_profile=profile,
                     email=billing_details.email,
