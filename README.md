@@ -55,17 +55,18 @@ It is designed to be used on any device.
 | 16 | Shopper | Easily select the product and quantity I wish to purchase | Ensure I don't select the wrong quantity when ordering |
 | 17 | Shopper | View items in my bag to be purchased | Identify the total cost of the order and what items I will receive |
 | 18 | Shopper | Adjust the quantity of the items in my bag | Easily make changes to my purchase before checkout |
-| 19 | Shopper | Easily enter my payment information | Checkout quickly without any hassles |
-| 20 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
-| 21 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
-| 22 | Shopper | Receive an email confirmation after checkout | Keep the confirmation of what I've purchased for my records |
+| 19 | Shopper | Choose a delivery day for my order | Know when my order will arrive |
+| 20 | Shopper | Easily enter my payment information | Checkout quickly without any hassles |
+| 21 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 22 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 23 | Shopper | Receive an email confirmation after checkout | Keep the confirmation of what I've purchased for my records |
 
 #### Admin and store management
 | # |As A/An| I want to    | So I Can  |
 |---|---------|-------------| -----|
-| 23 | Shop Owner | Add a product | Add new items to my store |
-| 24 | Shop Owner | Edit or update a product | Change product price, description, images and other criteria |
-| 25 | Shop Owner | Delete a product | Remove items that are no longer available |
+| 24 | Shop Owner | Add a product | Add new items to my store |
+| 25 | Shop Owner | Edit or update a product | Change product price, description, images and other criteria |
+| 26 | Shop Owner | Delete a product | Remove items that are no longer available |
 
 [Back to Index](#table-of-contents)
 
@@ -112,7 +113,9 @@ Users should be able to use the site without needing additional instruction.
 
 The interface should be simple and work on a variety of devices.
 
-Users will be able to select and pay for items for delivery the next day
+Users will be able to select and pay for items for delivery.
+
+User will be able to select a delivery day
 
 #### Admin
 Store owners need to be able to manage the products in the store
@@ -194,7 +197,7 @@ Store managers could be able to remove orphaned product images
 
 #### Users ####
 
-A future version could allow users to select a delivery date
+A future version could allow users to select a delivery date instead of just a day of the week
 
 A furture version could allow users to select a repeat order for regular delivery
 
@@ -328,6 +331,8 @@ Hero Image created using Photoshop and an image from Pexels [Photo by Klaus Holl
 
 All product images sourced from [Pexels]( https://www.pexels.com/)
 
+Favicon.ico created at [Favicon.io](https://favicon.io/)
+
 Sample product information sourced from [Asda](https://groceries.asda.com/)
 
 [Back to Index](#table-of-contents)
@@ -379,17 +384,18 @@ W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator
 | 16 | Shopper | Easily select the product and quantity I wish to purchase | Ensure I don't select the wrong quantity when ordering | The shopping bag allows the user to see and amend the quantity of each item |
 | 17 | Shopper | View items in my bag to be purchased | Identify the total cost of the order and what items I will receive | The shopping bag displays all items selected for purchase |
 | 18 | Shopper | Adjust the quantity of the items in my bag | Easily make changes to my purchase before checkout | The shopping bag allows the user to see and amend the quantity of each item |
-| 19 | Shopper | Easily enter my payment information | Checkout quickly without any hassles | Payments handled by Stripe |
-| 20 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase | Payments handled by Stripe |
-| 21 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes | Order confirmation page shows all order details after processing by Stripe |
-| 22 | Shopper | Receive an email confirmation after checkout | Keep the confirmation of what I've purchased for my records | Checkout success page emails the user with order confirmation information |
+| 19 | Shopper | Choose a delivery day for my order | Know when my order will arrive | User must choose a delivery day on the checkout page |
+| 20 | Shopper | Easily enter my payment information | Checkout quickly without any hassles | Payments handled by Stripe |
+| 21 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase | Payments handled by Stripe |
+| 22 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes | Order confirmation page shows all order details after processing by Stripe |
+| 23 | Shopper | Receive an email confirmation after checkout | Keep the confirmation of what I've purchased for my records | Checkout success page emails the user with order confirmation information |
 
 #### Admin and store management
 | # | As A/An | I want to | So I Can | Satisfied by |
 |---|---------|-------------| -----| ---------- |
-| 23 | Shopper | Add a product | Add new items to my store | Product management page allows the admin to add a new product |
-| 24 | Shopper | Edit or update a product | Change product price, description, images and other criteria | When logged in, an admin has the options to edit each product on the product and product detail pages |
-| 25 | Shopper | Delete a product | Remove items that are no longer available | When logged in, an admin has the option to delete each product on the product and product detail pages  |
+| 24 | Shopper | Add a product | Add new items to my store | Product management page allows the admin to add a new product |
+| 25 | Shopper | Edit or update a product | Change product price, description, images and other criteria | When logged in, an admin has the options to edit each product on the product and product detail pages |
+| 26 | Shopper | Delete a product | Remove items that are no longer available | When logged in, an admin has the option to delete each product on the product and product detail pages  |
     
 ### Further Testing
 
@@ -512,7 +518,7 @@ Some auto generated files left in place in case of future development. Imports c
 ## Future Development 
 
 ### Delivery Area
-As this is a local delivery service, there should be a limit to the areathat customers can order from. This could be managed by postcodes.
+As this is a local delivery service, there should be a limit to the area that customers can order from. This could be managed by postcodes.
 A delivery area map should also be included.
 
 ### Image Management
@@ -520,7 +526,7 @@ Currently, when a product image is added to a product which is later deleted, th
 An option should be included to remove this image if it is no longer required
 
 ### Delivery Dates
-This is currently built for 'next day delivery'. An option should be added to allow customers to choose their delivery day.
+The user is able to select a delivery day (within the next seven days). An option should be added to allow customers to choose any future delivery date.
 
 ### Delete Profile
 An option for users to delete their profile should be added.
